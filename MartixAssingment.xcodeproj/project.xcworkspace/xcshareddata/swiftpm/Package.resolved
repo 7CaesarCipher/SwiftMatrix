@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "charts",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/danielgindi/Charts.git",
+      "state" : {
+        "revision" : "0a229f8c914b0ec93798cee058cf75b339297513",
+        "version" : "5.0.0"
+      }
+    },
+    {
+      "identity" : "dpcharts",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/danielepantaleone/DPCharts.git",
+      "state" : {
+        "revision" : "f38a95374b84e6026710901e05ec6988d00b7550",
+        "version" : "1.2.2"
+      }
+    }
+  ],
+  "version" : 2
+}

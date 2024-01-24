@@ -9,21 +9,30 @@
 /* Begin PBXBuildFile section */
 		4F5289662B5FD45D0004619B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5289652B5FD45D0004619B /* AppDelegate.swift */; };
 		4F5289682B5FD45D0004619B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5289672B5FD45D0004619B /* SceneDelegate.swift */; };
-		4F52896A2B5FD45D0004619B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5289692B5FD45D0004619B /* ViewController.swift */; };
+		4F52896A2B5FD45D0004619B /* MatrixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5289692B5FD45D0004619B /* MatrixViewController.swift */; };
 		4F52896D2B5FD45D0004619B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F52896B2B5FD45D0004619B /* Main.storyboard */; };
 		4F52896F2B5FD45E0004619B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F52896E2B5FD45E0004619B /* Assets.xcassets */; };
 		4F5289722B5FD45E0004619B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F5289702B5FD45E0004619B /* LaunchScreen.storyboard */; };
+		4F52897D2B5FE25D0004619B /* HourModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F52897C2B5FE25D0004619B /* HourModel.swift */; };
+		4F52897F2B5FE3150004619B /* MatrixViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F52897E2B5FE3150004619B /* MatrixViewModel.swift */; };
+		4F5289812B5FE3FF0004619B /* JsonData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F5289802B5FE3FF0004619B /* JsonData.json */; };
+		4F5289842B603CCE0004619B /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 4F5289832B603CCE0004619B /* DGCharts */; };
+		4F5289862B603CCE0004619B /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 4F5289852B603CCE0004619B /* DGChartsDynamic */; };
+		4F886E0A2B60E91A000FF2F8 /* DPCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 4F886E092B60E91A000FF2F8 /* DPCharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F5289622B5FD45D0004619B /* MartixAssingment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MartixAssingment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F5289652B5FD45D0004619B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F5289672B5FD45D0004619B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4F5289692B5FD45D0004619B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F5289692B5FD45D0004619B /* MatrixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixViewController.swift; sourceTree = "<group>"; };
 		4F52896C2B5FD45D0004619B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F52896E2B5FD45E0004619B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F5289712B5FD45E0004619B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F5289732B5FD45E0004619B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F52897C2B5FE25D0004619B /* HourModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourModel.swift; sourceTree = "<group>"; };
+		4F52897E2B5FE3150004619B /* MatrixViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixViewModel.swift; sourceTree = "<group>"; };
+		4F5289802B5FE3FF0004619B /* JsonData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = JsonData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F5289862B603CCE0004619B /* DGChartsDynamic in Frameworks */,
+				4F886E0A2B60E91A000FF2F8 /* DPCharts in Frameworks */,
+				4F5289842B603CCE0004619B /* DGCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +68,42 @@
 		4F5289642B5FD45D0004619B /* MartixAssingment */ = {
 			isa = PBXGroup;
 			children = (
+				4F52897B2B5FE2400004619B /* View */,
+				4F52897A2B5FE2360004619B /* ViewModel */,
+				4F5289792B5FE2220004619B /* Model */,
 				4F5289652B5FD45D0004619B /* AppDelegate.swift */,
 				4F5289672B5FD45D0004619B /* SceneDelegate.swift */,
-				4F5289692B5FD45D0004619B /* ViewController.swift */,
 				4F52896B2B5FD45D0004619B /* Main.storyboard */,
+				4F5289802B5FE3FF0004619B /* JsonData.json */,
 				4F52896E2B5FD45E0004619B /* Assets.xcassets */,
 				4F5289702B5FD45E0004619B /* LaunchScreen.storyboard */,
 				4F5289732B5FD45E0004619B /* Info.plist */,
 			);
 			path = MartixAssingment;
+			sourceTree = "<group>";
+		};
+		4F5289792B5FE2220004619B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F52897C2B5FE25D0004619B /* HourModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F52897A2B5FE2360004619B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4F52897E2B5FE3150004619B /* MatrixViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4F52897B2B5FE2400004619B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F5289692B5FD45D0004619B /* MatrixViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +122,11 @@
 			dependencies = (
 			);
 			name = MartixAssingment;
+			packageProductDependencies = (
+				4F5289832B603CCE0004619B /* DGCharts */,
+				4F5289852B603CCE0004619B /* DGChartsDynamic */,
+				4F886E092B60E91A000FF2F8 /* DPCharts */,
+			);
 			productName = MartixAssingment;
 			productReference = 4F5289622B5FD45D0004619B /* MartixAssingment.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +155,10 @@
 				Base,
 			);
 			mainGroup = 4F5289592B5FD45D0004619B;
+			packageReferences = (
+				4F5289822B603CCE0004619B /* XCRemoteSwiftPackageReference "Charts" */,
+				4F886E082B60E91A000FF2F8 /* XCRemoteSwiftPackageReference "DPCharts" */,
+			);
 			productRefGroup = 4F5289632B5FD45D0004619B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F5289722B5FD45E0004619B /* LaunchScreen.storyboard in Resources */,
+				4F5289812B5FE3FF0004619B /* JsonData.json in Resources */,
 				4F52896F2B5FD45E0004619B /* Assets.xcassets in Resources */,
 				4F52896D2B5FD45D0004619B /* Main.storyboard in Resources */,
 			);
@@ -138,7 +187,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F52896A2B5FD45D0004619B /* ViewController.swift in Sources */,
+				4F52896A2B5FD45D0004619B /* MatrixViewController.swift in Sources */,
+				4F52897F2B5FE3150004619B /* MatrixViewModel.swift in Sources */,
+				4F52897D2B5FE25D0004619B /* HourModel.swift in Sources */,
 				4F5289662B5FD45D0004619B /* AppDelegate.swift in Sources */,
 				4F5289682B5FD45D0004619B /* SceneDelegate.swift in Sources */,
 			);
@@ -298,8 +349,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,8 +376,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,6 +412,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F5289822B603CCE0004619B /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		4F886E082B60E91A000FF2F8 /* XCRemoteSwiftPackageReference "DPCharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielepantaleone/DPCharts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F5289832B603CCE0004619B /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F5289822B603CCE0004619B /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		4F5289852B603CCE0004619B /* DGChartsDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F5289822B603CCE0004619B /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGChartsDynamic;
+		};
+		4F886E092B60E91A000FF2F8 /* DPCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F886E082B60E91A000FF2F8 /* XCRemoteSwiftPackageReference "DPCharts" */;
+			productName = DPCharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F52895A2B5FD45D0004619B /* Project object */;
 }
